@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+.post_card {
+    box-shadow: 0px 4px 8px 4px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    margin:3rem 27rem;
+ 
+  }
+  .comments{
+  margin-top:-45px ;
+ font-family: 'Oswald', sans-serif;
+  }
+  .view_comment{
+    border-radius:25px;
+    background-color:white; /* Green */
+    height:30px;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+   
+  }
+  .post_message{
+    display: flex;
+    align-items: center;
+  }
+  .post_message_pic{
+    padding:0px;
+    width:20px;
+    margin:4px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+  }
+  .likes{
+    display: flex;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+  }
+.like_icon
+{
+  margin: 4px;
+  width:30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer; 
+  outline: none; 
+  transition: 0.1s all;
+}
+.like_icon:active { 
+  transform: scale(0.88); 
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+.allcomments{
+  width: 100%;
+  height: 90px;
+  overflow: scroll;
+
+}
+.unlike_icon
+{
+  margin: 4px;
+  width:30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer; 
+  outline: none; 
+  transition: 0.1s all;
+
+}
+.unlike_icon:active { 
+  transform: scale(0.88); 
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+  .post_username{
+     display:flex;
+     align-items: center;
+     font-family: 'Oswald', sans-serif;
+
+  }
+  .postImage{
+      margin:3px;
+      width: 100%;
+      
+      height:350px;
+  }
+  .profilePic
+  {
+      margin: 10px;
+      width:30px;
+      border-radius: 50%;
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+  .title{
+    font-family: 'Niconne', cursive;
+    font-size: 40px;
+    margin:2rem 15rem;
+  }
+  input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+  
+  input:focus {
+    border: 3px solid #555;
+  }

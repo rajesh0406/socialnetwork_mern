@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+body {
+    margin: 0;
+}
+.instagram-profile-page{
+    background-color: #fafafa;
+    height:100vw;
+    display: block;
+}
+.instagram-header
+{
+    background-color:#ffffff;
+    padding:11px 290px 11px 290px;
+    object-fit: contain;
+    border-bottom:1px solid lightgray;
+    height:30px;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex; 
+    justify-content:space-between;
+    top:0;
+    z-index:1;
+    position: sticky;
+}
+.instagram-search-bar{
+
+ width:206px;
+ height:25px;
+ border-radius: 2px;
+ color:gray;
+ background-color:#fafafa;
+ border:1px solid lightgray;
+ font-family: 'Roboto', sans-serif;
+ font-size: small;
+ font-style: normal;
+ font-weight: 100;
+ display: flex;
+justify-content: center;
+align-items: center;
+}
+.instagram-search-icon{
+    height:10px;
+    width:10px;
+    padding-right:5px;
+  
+}
+.instagram-header-icons{
+    display:flex;
+    align-items: center;
+   
+}
+.instagram-home-icon{
+    width:22px;
+    height:22px;
+    padding-right:15px ;
+}
+.instagram-message-icon
+{
+    width:29px;
+    height:29px;
+    padding-right:15px ;
+}
+.instagram-compass-icon
+{
+    width:25px;
+    height:25px;
+    padding-right:15px ;
+}
+.instagram-heart-icon
+{
+    width:31px;
+    height:31px;
+    padding-right:15px ;
+}
+.instagram-profile-icon
+{
+    width:28px;
+    height:28px;
+    padding-right:15px ;
+}
+.instagram-profile-contents{
+    margin:0px 290px 0px 290px;
+    height:280px;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+
+}
+.instagram-profile-pic{
+    height:268px;
+    width:317px;
+    display: inline-block;
+
+}
+
+.instagram-profile-image{
+    height:152px;
+    margin-left:85px;
+    margin-top:52px;
+    width:152px;
+    display: block;
+    border-radius: 50%;
+    border: 12px double transparent;
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    border-color:white; 
+}
+
+.instagram-profile-details{
+    padding-top: 21px;
+    height:268px;
+    width:317px;
+    
+}
+.instagram-profile-row-1
+{
+    padding:15px 0px 15px 0px;
+}
+.instagram-profile-row-1{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.row-1-username {
+    font-size: 26px;
+    color:rgb(63, 57, 57);
+    font-weight: 50;
+}
+.edit-button{
+    border:1px solid lightgray !important;
+    color:black !important;
+    height:25px !important;
+    text-align: center !important;
+    padding-right: 5px !important;
+    padding-left:5px !important;
+    border-radius: 4px !important;
+    font-size:15px !important;
+    font-weight: 500 !important;
+    text-decoration: none;
+   
+}
+.edit-button-link{
+    text-decoration: none;
+    color: #000;
+}
+.configuration-icon{
+    width:28px;
+    height:28px;
+    margin-left:-15px;
+}
+.instagram-profile-row-2{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row-2-post
+{
+    font-size: 15px;
+    color:rgb(78, 78, 78);
+    display: inline-flex;
+}
+.instagram-count
+{
+    color: black;
+    font-weight: 500;
+    padding-right: 3px;
+    
+}
+.row-2-followers
+{
+    font-size: 15px;
+    color:rgb(78, 78, 78);
+    display: inline-flex;
+}
+.row-2-following
+{
+    font-size: 15px;
+    color:rgb(78, 78, 78);
+    display: inline-flex;
+}
+.row-3-description
+{
+    font-size: 15px;
+    color:rgb(78, 78, 78);
+    padding: 2px;
+}
+.instagram-profile-row-3{
+    padding-top: 10px;
+}
+.row-3-name{
+    font-size: 15px;
+    color: black;
+    font-weight: 500;
+    padding-top: 8px;
+}
+.instagram-buttons{
+    margin:0px 520px 0px 520px;
+    padding:15px 0px 15px 0px;
+    height:30px;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: space-around;
+}
+.my-post-button{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color:grey;
+    margin-top:-15px;
+    padding:0px 15px 0px 15px;
+    
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.my-post-button img{
+    width:13px;
+    height:13px;
+    padding-right: 5px;
+}
+.my-post-button ul{
+    text-decoration: none;
+    background-color: #fafafa;
+}
+.my-post-button li{
+    text-decoration: none;
+    background-color: #fafafa;
+    color:grey;
+}
+li:active{
+    color:black;
+    border-top: 1px solid black;
+
+}
+li:visited{
+    color:grey;
+
+}
+.instagram-my-posts {
+    margin:0px 290px 0px 290px;
+    display: flex;
+    flex-wrap: wrap;
+}
+  .instagram-post-container{
+    position: relative;
+    width: 293px;
+    height:290px;
+    margin: 5px 9px 5px 9px;
+  }
+  
+  .post-image{
+    display: block;
+   height:290px;
+    width:293px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+   height:290px;
+    width:293px;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: grey;
+  }
+  
+  .instagram-post-container:hover .overlay {
+    opacity:  0.6;
+  }
+  
+  .post-icon {
+      opacity: 1;
+    height:14px;
+    width:14px;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    z-index:1;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  } 
+  .overlay-content p{
+      display: flex;
+      align-items: center;
+      text-align: center;
+  }
+  .overlay-content{
+      display: flex;
+      align-items: center;
+    justify-content: center;
+  }
+  .comment-icon{
+      z-index:1;
+      opacity: 1;
+    height:14px;
+    width:14px;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+      padding-left:150px;
+  }
+  #spinner-center{
+    margin-left:47%;
+    margin-top:20%;
+    height:40px;
+    width:40px;
+  }

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+.SecondNavbar{
+    
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+    width:100%;
+    height:60px;
+    position: sticky;
+    text-align: center;
+   
+    
+   
+  }
+  .SecondNavbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 10px;
+    justify-content: space-evenly;
+  }
+  .SecondNavbar li{
+      float: left;
+  }
+  .SecondNavbar li a {
+    display: block;
+    color:#111;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px
+    
+  }
+  
+  .SecondNavbar li a:hover {
+    border-bottom: 2px solid rgb(12, 1, 11);
+  }

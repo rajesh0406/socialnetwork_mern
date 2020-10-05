@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+body {
+    margin: 0;
+}
+.instagram-profile-page{
+    background-color: #fafafa;
+    height:100vw;
+    display: block;
+}
+.instagram-header
+{
+    background-color:#ffffff;
+    padding:11px 290px 11px 290px;
+    object-fit: contain;
+    border-bottom:1px solid lightgray;
+    height:30px;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex; 
+    justify-content:space-between;
+    top:0;
+    z-index:1;
+    position: sticky;
+}
+.instagram-search-bar{
+
+ width:206px;
+ height:25px;
+ border-radius: 2px;
+ color:gray;
+ background-color:#fafafa;
+ border:1px solid lightgray;
+ font-family: 'Roboto', sans-serif;
+ font-size: small;
+ font-style: normal;
+ font-weight: 100;
+ display: flex;
+justify-content: center;
+align-items: center;
+}
+.instagram-search-icon{
+    height:10px;
+    width:10px;
+    padding-right:5px;
+  
+}
+.instagram-header-icons{
+    display:flex;
+    align-items: center;
+   
+}
+.instagram-home-icon{
+    width:22px;
+    height:22px;
+    padding-right:15px ;
+}
+.instagram-message-icon
+{
+    width:29px;
+    height:29px;
+    padding-right:15px ;
+}
+.instagram-compass-icon
+{
+    width:25px;
+    height:25px;
+    padding-right:15px ;
+}
+.instagram-heart-icon
+{
+    width:31px;
+    height:31px;
+    padding-right:15px ;
+}
+.instagram-profile-icon
+{
+    width:28px;
+    height:28px;
+    padding-right:15px ;
+}
