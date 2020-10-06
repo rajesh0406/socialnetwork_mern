@@ -25,8 +25,7 @@ import InstagramHome from './screens/InstagramHome/InstagramHome';
 import InstagramNavbar from './screens/InstagramNavbar/InstagramNavbar';
 import Addstory from './screens/Addstory/Addstory';
 import './App.css';
-import {Provider} from 'react-redux';
-import store from '../src/redux/store';
+
 function App() {
  
  
@@ -34,7 +33,7 @@ function App() {
     <div className="app" >
       
       <Router>
-      <Provider store={store}>
+      
      <Switch>
        <Route path="/signup">
          <SignUp/>
@@ -95,7 +94,7 @@ function App() {
           <Addstory/>
           </Route>
      </Switch>
-     </Provider>
+  
      </Router>
      
     </div>

@@ -10,7 +10,7 @@ function AllPost()
  const [loading,setloading]=useState(false);
    useEffect(() => {
      setloading(true);
-    Axios.get("/request/people",{
+    Axios.get("http://localhost:8000/request/people",{
       headers:{
         "Content-Type":"application/json",
         "Authorization":"Bearer "+localStorage.getItem("jwt")

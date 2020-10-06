@@ -4,7 +4,19 @@ import './SignUp.css';
 import axios from 'axios';
 import {DebounceInput} from 'react-debounce-input'; 
 import CloseIcon from '@material-ui/icons/Close';
-function SignUp()
+import {connect} from 'react-redux';
+import {signup} from '../../redux/action';
+const mapStateToProps=state=>{
+  return{
+  user:state.user
+  }
+  }
+  const mapDispatchToProps=dispatch=>{
+  return{
+      signup:(details)=>dispatch(signup(details))
+  }
+  };
+function SignUp(props)
 {
   const history=useHistory("");
   const [success,setSuccess]=useState("");
@@ -27,34 +39,28 @@ function SignUp()
       return;
     }
     setloadicon(true);
-    axios.post('/signup', {
+    const details={
       name:name,
       emailId:emailId,
       phnNo:phnNo,
       userName:userName,
       password:password
-      })
-      .then(function (res) {
-        console.log(res);
-        setloadicon(false);
-        if(!res.data)
-        {
-          setError("Something went wrong during sign-up");
-          
-        }
-        else if(res.data==="exist")
-        {
-          setError("User-Id already exists")
-        }
-        else if(res.data){
-        setSuccess("Sign-up successfull");
-        history.push("/");
-        }
-      }).catch(function(error){
-        setloadicon(false);  
-        setError("Something went wrong.Try again");
-        console.log(error)
-      })
+      }
+    const res=props.signup(details);
+    setloadicon(false);
+              if(!res.data)
+              {
+                setError("Something went wrong during sign-up");
+                
+              }
+              else if(res.data==="exist")
+              {
+                setError("User-Id already exists")
+              }
+              else if(res.data){
+              setSuccess("Sign-up successfull");
+              history.push("/");
+              }
 
   };
   return (
@@ -94,6 +100,6 @@ function SignUp()
   
   )
 };
-export default SignUp;
+export default connect(mapStateToProps,mapDispatchToProps)(SignUp);
 
 
